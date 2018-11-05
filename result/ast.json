@@ -7,30 +7,55 @@
             "type": "if",
             "cond": {
                 "type": "binary",
-                "op": ">",
+                "op": "&&",
                 "left": {
-                    "tokenType": "Accessor",
-                    "line": 1,
-                    "col": 13,
-                    "type": "accessor",
-                    "value": "clientId",
-                    "child": {
-                        "tokenType": "Keyword",
+                    "type": "binary",
+                    "op": "!=",
+                    "left": {
+                        "tokenType": "Function",
+                        "type": "func",
+                        "name": null,
+                        "vars": [
+                            "clientId"
+                        ],
+                        "body": null
+                    },
+                    "right": {
+                        "tokenType": "String",
                         "line": 1,
-                        "col": 20,
-                        "type": "var",
-                        "value": "length"
+                        "col": 26,
+                        "type": "str",
+                        "value": "undefined",
+                        "quoteType": "\""
                     }
                 },
                 "right": {
-                    "tokenType": "Number",
-                    "line": 1,
-                    "col": 24,
-                    "type": "num",
-                    "value": 0,
-                    "isFloat": false,
-                    "isNegative": false,
-                    "isExponential": false
+                    "type": "binary",
+                    "op": ">",
+                    "left": {
+                        "tokenType": "Accessor",
+                        "line": 1,
+                        "col": 49,
+                        "type": "accessor",
+                        "value": "clientId",
+                        "child": {
+                            "tokenType": "Keyword",
+                            "line": 1,
+                            "col": 56,
+                            "type": "var",
+                            "value": "length"
+                        }
+                    },
+                    "right": {
+                        "tokenType": "Number",
+                        "line": 1,
+                        "col": 60,
+                        "type": "num",
+                        "value": 0,
+                        "isFloat": false,
+                        "isNegative": false,
+                        "isExponential": false
+                    }
                 }
             },
             "then": {
